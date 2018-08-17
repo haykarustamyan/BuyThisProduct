@@ -28,7 +28,6 @@ public class SplashActivity extends BaseActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_splash);
     mAuth = FirebaseAuth.getInstance();
 
     mFirebaseApi = FirebaseApi.getInstance();
@@ -47,6 +46,11 @@ public class SplashActivity extends BaseActivity {
     } else {
       startMainActivity();
     }
+  }
+
+  @Override
+  protected int getLayoutResource() {
+    return R.layout.activity_splash;
   }
 
   private void startMainActivity() {

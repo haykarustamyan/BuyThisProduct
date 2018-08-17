@@ -51,7 +51,7 @@ public class ProductsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_products, container, false);
 
         Button refregerBtn = (Button) rootView.findViewById(R.id.ll_refreger);
-        viewPager = (ViewPager) getActivity().findViewById(R.id.tv_productsFragment);
+//        viewPager = (ViewPager) getActivity().findViewById(R.id.tv_productsFragment);
 
         refregerBtn.setOnClickListener(new View.OnClickListener()
         {
